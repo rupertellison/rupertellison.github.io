@@ -1,12 +1,54 @@
-<div
-  class="flex flex-col px-4 py-20 font-bold text-white uppercase bg-black leading-[288.84px] text-[166px] max-md:text-4xl"
->
-  <div class="self-center mt-12 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
-    Rupert Ellison
-  </div>
-  <img
-    loading="lazy"
-    srcset="..."
-    class="mt-20 w-full aspect-[1.33] max-md:mt-10 max-md:max-w-full"
-  />
-</div>
+<style>
+  .rupert-ellison {
+    background-color: var(--Dark, #000);
+    display: flex;
+    flex-direction: column;
+    font-size: 166px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 174%;
+    padding: 80px 15px;
+  }
+
+  @media (max-width: 991px) {
+    .rupert-ellison {
+      font-size: 40px;
+    }
+  }
+
+  .name {
+    font-family: Manrope, sans-serif;
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 991px) {
+    .name {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+
+  .profile-image {
+    aspect-ratio: 1.33;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    margin-top: 79px;
+    alt: "Rupert Ellison profile image";
+  }
+
+  @media (max-width: 991px) {
+    .profile-image {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+</style>
+
+<section class="rupert-ellison">
+  <h1 class="name">Rupert Ellison</h1>
+  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0d60f4ed2204e3f00bcde087020a0409a4d9fd5289d3a8a7f7d2ca527d8d347c?apiKey=fa7c673a8d0e4e2092ce11c69e536233&" class="profile-image" alt="Rupert Ellison profile image" />
+</section>
