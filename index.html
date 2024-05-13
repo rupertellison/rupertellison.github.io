@@ -1,69 +1,87 @@
-<style>
-  .rupert-ellison {
-    background-color: var(--Dark, #000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 60px;
-    font-size: 96px;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 174%;
-  }
-
-  @media (max-width: 991px) {
-    .rupert-ellison {
-      padding: 0 20px;
-      font-size: 40px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
     }
-  }
-
-  .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 873px;
-    max-width: 100%;
-    margin-top: 33px;
-  }
-
-  @media (max-width: 991px) {
-    .content-wrapper {
-      font-size: 40px;
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
-  }
-
-  .name-heading {
-    font-family: Manrope, sans-serif;
-    align-self: center;
-  }
-
-  @media (max-width: 991px) {
-    .name-heading {
-      max-width: 100%;
-      font-size: 40px;
+    nav ul {
+      list-style: none;
+      padding: 0;
     }
-  }
-
-  .portrait-image {
-    aspect-ratio: 1.3;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    margin-top: 55px;
-  }
-
-  @media (max-width: 991px) {
-    .portrait-image {
-      max-width: 100%;
-      margin-top: 40px;
+    nav li {
+      display: inline;
+      margin: 0 10px;
     }
-  }
-</style>
+    nav a {
+      text-decoration: none;
+      color: #fff;
+    }
+    section {
+      padding: 40px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<section class="rupert-ellison">
-  <div class="content-wrapper">
-    <h1 class="name-heading">Rupert Ellison</h1>
-    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7dc70728665740c6761edbd7df928a2390c5efb687452c84f6959ad546984655?apiKey=fa7c673a8d0e4e2092ce11c69e536233&" alt="Portrait of Rupert Ellison" class="portrait-image" loading="lazy" />
-  </div>
-</section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! I'm a passionate web developer...</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of project 1...</p>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of project 2...</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name"><br><br>
+      <input type="email" placeholder="Your Email"><br><br>
+      <textarea placeholder="Your Message"></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio</p>
+  </footer>
+</body>
+</html>
