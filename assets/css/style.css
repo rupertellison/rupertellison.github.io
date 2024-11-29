@@ -73,6 +73,14 @@ main {
     object-fit: contain;
 }
 
+.no-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Fonts */
+
 .amarante-regular {
     font-family: "Amarante", serif;
     font-weight: 400;
