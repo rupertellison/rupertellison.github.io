@@ -64,9 +64,7 @@ header {
 
 main {
     display: flex;
-    height: 100vh;
     justify-content: center;
-    padding: 20px 0;
     flex-grow: 1;
 }
 
@@ -83,21 +81,31 @@ p {
 /* Classes */
 
 .content {
+    max-width: 1240px;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 1240px;
-    align-items: center;
-}
-
-.content > * {
-    padding-bottom: 50px;
+    align-items: stretch;
+    gap: 40px 0;
+    padding: 40px 0;
 }
 
 .game-container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
+    transition: transform .4s ease-out, box-shadow .4s ease-out, background-color .4s ease-out;
+}
+
+.game-container:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #1F1F1F;
 }
 
 .game-title {
