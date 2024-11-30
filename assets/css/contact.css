@@ -1,0 +1,28 @@
+body {
+    min-height: 400px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+/* Classes */
+
+.contact {
+    color: white;
+    text-align: center;
+    padding-bottom: 150px;
+}

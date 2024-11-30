@@ -1,0 +1,23 @@
+body {
+    justify-content: center;
+}
+
+nav li a {
+    font-size: min(3em, 3vw);
+}
+
+/* Classes */
+
+.title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: min(10.636em, 9vw);
+    color: white;
+    white-space: nowrap;
+}
+
+.spaceman-large {
+    height: 30vh;
+}
