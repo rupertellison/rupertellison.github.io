@@ -166,6 +166,10 @@ p {
     filter: brightness(100%);
 }
 
+#tsparticles {
+    z-index: -1;
+}
+
 
 /* Media queries */
 @media (max-width: 1300px) {
