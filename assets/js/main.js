@@ -1,9 +1,3 @@
-let domReady = (cb) => {
-  document.readyState === "interactive" || document.readyState === "complete"
-    ? cb()
-    : document.addEventListener("DOMContentLoaded", cb);
-};
-
-domReady(() => {
+window.addEventListener('load',() => {
   document.body.style.opacity = "100%";
 });
