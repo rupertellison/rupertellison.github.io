@@ -14,9 +14,8 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #222;
-    /*background-image: linear-gradient(#444, #111);*/
     opacity: 0;
-    transition: opacity 1s ease-out;
+    transition: opacity 0.4s ease-out;
 }
 
 /* Navigation */
@@ -66,6 +65,7 @@ header {
 
 main {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-grow: 1;
 }
@@ -82,14 +82,77 @@ p {
 
 /* Classes */
 
+.article-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-width: 1240px;
+    gap: 40px 0;
+    padding-bottom: 40px;
+    width: 100%;
+    top: 0;
+}
+
+.article-container img {
+    border: 2px solid #ddd;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    opacity: 0;
+    padding: 0 40px;
+    transition: opacity 0.4s ease-out, height 0.4s ease-out;
+    align-items: center;
+    overflow: hidden;
+}
+
+.article h3 {
+    color: white;
+    text-align: center;
+}
+
+.article img {
+    margin-bottom: 40px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.article p {
+    margin-bottom: 40px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    color: white;
+    font-size: 4em;
+    cursor: pointer;
+    transition: color 0.25s ease-out;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
 .content {
     max-width: 1240px;
     min-height: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     gap: 40px 0;
     padding: 40px 0;
+    transition: opacity 0.4s ease-out;
+    z-index: 1;
+}
+
+.content img {
+    border: 2px solid #ddd;
 }
 
 .game-container {
@@ -103,11 +166,36 @@ p {
     transition: transform .4s ease-out, box-shadow .4s ease-out, background-color .4s ease-out;
 }
 
+.game-container img {
+    border: 2px solid #ddd;
+}
+
 .game-container:hover {
     cursor: pointer;
     transform: scale(1.01);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     background-color: #1F1F1F;
+}
+
+.game-info {
+    margin-bottom: 40px;
+}
+
+.game-info > * {
+    margin-bottom: 5px;
+}
+
+.game-info a {
+    display: flex;
+    flex-direction: column;
+    color: dodgerblue;
+    text-decoration: underline;
+    text-align: center;
+    transition: color 0.4s ease-out;
+}
+
+.game-info a:hover {
+    color: cornflowerblue;
 }
 
 .game-title {

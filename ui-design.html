@@ -15,6 +15,7 @@
   <meta name="description" content="A showcase of my UI design skills in various game projects.">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/design.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js" defer></script>
   <script src="assets/js/particles.js" defer></script>
 </head>
@@ -37,23 +38,119 @@
 </header>
 <main>
   <div class="content">
-    <div class="game-container">
-      <img src="assets/images/skyriminventory.webp" alt="Redesign of the Skyrim inventory menu" height="390" width="698"/>
+    <div class="game-container" data-target="skyrim">
+      <img src="assets/images/skyrim/skyrim1.webp" alt="Redesign of the Skyrim inventory menu" height="432" width="768"/>
       <div>
         <h1 class="game-title amarante-regular"><u>RE-IMAGINING OF SKYRIM’S INVENTORY</u></h1>
         <p>A solo project I undertook to re-imagine the Skyrim inventory system to better hone my UI design skills.</p>
       </div>
     </div>
-    <div class="game-container">
+    <div class="game-container" data-target="wasteaway">
       <div>
         <h1 class="game-title amarante-regular"><u>WASTE AWAY</u></h1>
         <p>
           Waste Away was a group project to build a waste management simulator game, in which I designed all of the UI.
         </p>
       </div>
-      <img src="assets/images/wasteaway1.webp" alt="Waste Away gameplay" height="385" width="703"/>
+      <img src="assets/images/wasteaway/wasteaway1.webp" alt="Waste Away gameplay" height="432" width="768"/>
     </div>
   </div>
+  <div class="article-container">
+    <div id="skyrim" class="article">
+      <span class="close-btn raleway-bold">&larr;</span>
+      <h1 class="amarante-regular game-title">RE-IMAGINING OF SKYRIM’S INVENTORY</h1>
+      <p>
+        This was a personal project to make a re-imagining of the Skyrim inventory system inside of Figma. The
+        motivation for this specific choice was due to it feeling outdated and clunky to use. The goal of this
+        re-design was to make the inventory system more accessible and efficient for players to use.
+      </p>
+      <img src="assets/images/skyrim/skyrim1.webp"/>
+      <p>
+        Skyrim’s current system consists of a list of items in text form, the player being able to filter items by
+        categories such as ‘apparel’ and ‘books.’ The item list is in alphabetical order with no other way to sort items
+        other than using the ‘favourite’ option to categorise their own items. To view any item’s stats the player must
+        scroll to that item. Because of these reasons I felt that this system could be adjusted to better suit the needs
+        of its player base. To start, I recreated the current inventory system in Figma as a reference point for all my
+        future designs.
+      </p>
+      <img src="assets/images/skyrim/skyrim2.webp"/>
+      <p>
+        For my first prototype the menu has been moved to the top of the screen and the items in the list have been
+        given icons to help the player recognise what each item is at a glance rather than needing to read the name. The
+        menu was moved to take advantage of the currently unused space at the top of the screen and give more horizontal
+        space to iterate the item menu. I wanted to use simple icons with colour coding to keep the minimalist approach
+        of the original whilst adding needed clarity and visual information to the items. These icons range from items
+        that effect or interact with health, magic, stamina, types of resistances, strengths modifiers, if stolen and
+        miscellaneous effects. I also wanted to maintain the monochromatic colour scheme of the original and the
+        immersive background in my design as those were key aspects of the original inventory.
+      </p>
+      <img src="assets/images/skyrim/skyrim3.webp"/>
+      <p>
+        For the second prototype I decided to add a filtering and sort option. I did this through a toggleable option at
+        the top of the inventory section that would be controlled with the triggers of the controller. These sorting
+        options would include alphabetical, weight, value, value to weight, quantity and types of properties (grouped
+        icons from previous design). This design would allow the player to navigate the long lists of items much easier
+        by filtering to what they require at the time.
+      </p>
+      <img src="assets/images/skyrim/skyrim4.webp"/>
+      <p>
+        For my third prototype I wanted to try and combat the long list format that I found frustrating by implementing
+        a grid-based system. This grid would use the current images for the items and the icons I introduced in
+        prototype-1, make the inventory visible at a glance and increase the amount on screen whilst maintaining the
+        minimalist look. This design would also make use of more of the screen space available by expanding into the
+        centre of the screen. To accommodate this new layout, I also added a cursor system to select the items instead
+        of the normal scrolling. This design was made to try and reduce time spent getting to items in the inventory
+        with the new visual approach rather than the text previously.
+      </p>
+      <img src="assets/images/skyrim/skyrim5.webp"/>
+      <p>
+        For my final prototype I wanted to hit on all my favourite aspects I’d tried and focus on prototype 2 as that
+        had the one I found the most successful. I added symbols by the side of the items depending on their sub-type to
+        allow for quick recognition when scrolling through the list and add more visually appealing elements that
+        weren't text. I also added a toggle to extend the inventory box to display more information such as the items
+        type, weight and value. This feature makes use of the empty space in the centre of the screen whilst allowing
+        more  player choice on the amount of detail displayed. This design will allow novice users to have a streamlined
+        experience whilst more advanced users can utilise these settings to the fullest.
+      </p>
+      <img src="assets/images/skyrim/skyrim6.webp"/>
+    </div>
+    <div id="wasteaway" class="article">
+      <span class="close-btn raleway-bold">&larr;</span>
+      <h1 class="amarante-regular game-title">WASTE AWAY</h1>
+      <div class="game-info">
+        <h3 class="raleway-bold">Genre: Management, Simulator</h3>
+        <h3 class="raleway-bold">Engine: Unity</h3>
+        <a class="raleway-bold" href="https://rupertellison.itch.io/waste-away">(Link to download)</a>
+      </div>
+      <p>
+        Waste Away was an 8-man team endeavour, working with other student programmers, designers and 3D artists over a
+        3-month period. As part of being assigned design lead over the project I also took charge over the games user
+        interface and visual aesthetic.
+      </p>
+      <img src="assets/images/wasteaway/wasteaway1.webp"/>
+      <p>
+        In a management game players need to be able to make informed decisions at a glance and so clarity was the
+        biggest pillar in my wireframes for the games UI. I used Balsamiq to create my wireframes due to it naturally
+        lending itself to rapid prototyping and amongst a team environment I wanted to constantly be seeking feedback
+        and iterating on my designs.
+      </p>
+      <img src="assets/images/wasteaway/wasteawayui2.webp"/>
+      <p>
+        Beyond functionality, visual appeal played a crucial role. The game's colour palette was chosen under my
+        guidance. I created a few different palettes aiming for a balance between thematic representation and user
+        comfort that I had my team vote for individual colours they thought fit. I then crafted two final palettes from
+        the ones the team most resonated with and we settled on striking selection of teal greens, a rich blue and a
+        pop of burnt orange to contrast and complement.
+      </p>
+      <img src="assets/images/wasteaway/wasteawayui3.webp"/>
+      <p>
+        The wireframes I created were instrumental in guiding the development of the in-game UI. They outlined the
+        layout, hierarchy, and interactions of various elements, ensuring consistency and clarity throughout the user
+        interface. By collaborating closely with the development team, I was able to refine the wireframes to align with
+        technical constraints and optimise the overall user experience.
+      </p>
+      <img src="assets/images/wasteaway/wasteaway4.webp"/>
+    </div>
 </main>
 </body>
 </html>
