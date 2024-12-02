@@ -58,7 +58,8 @@ nav li:last-child {
 /* Main content */
 
 header {
-    max-width: 1200px;
+    max-width: 1240px;
+    width: 99%;
     margin: 0 auto;
     text-align: center;
 }
@@ -170,8 +171,12 @@ p {
     padding: 20px 30px;
     border-radius: 8px;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     transition: transform .4s ease-out, box-shadow .4s ease-out, background-color .4s ease-out;
+}
+
+.game-container p {
+    text-align: left;
 }
 
 .game-container video {
@@ -281,6 +286,10 @@ p {
 
 /* Media queries */
 @media (max-width: 1300px) {
+    header {
+        max-width: 740px;
+    }
+
     nav li a {
         font-size: min(1.5em, 3vw);
     }
@@ -297,6 +306,7 @@ p {
 
     p {
         font-size: 2vw;
+        font-weight: 600
     }
 
     .content {
